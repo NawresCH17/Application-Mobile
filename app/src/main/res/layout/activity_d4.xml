@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CBF9C"
+    android:orientation="vertical"
+    tools:context=".D4Activity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="0"
+            android:layout_marginTop="30dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/files"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="137dp"
+                android:gravity="center"
+                android:text="Sécuritaire "
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <Button
+                android:id="@+id/certif1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#4C4747"
+                android:text="Certificat de résidence"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/certif2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#4C4747"
+                android:text="certificat perdu"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#4C4747"
+                android:text="Retour"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+

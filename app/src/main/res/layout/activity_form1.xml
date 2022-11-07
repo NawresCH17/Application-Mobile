@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".Form1Activity">
+
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="408dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:text="Nouvelle  carte d'identité"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="9dp"
+                android:ems="10"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:textColor="#0C0808"
+                android:textColorHint="#090606"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/prenom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="Prenom"
+                android:inputType="textPersonName"
+                android:textColorHint="#171313"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/username" />
+
+            <EditText
+                android:id="@+id/profession"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Profession"
+
+                android:textColorHint="#1C1515"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresse" />
+
+
+            <EditText
+                android:id="@+id/adresse"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="7dp"
+                android:ems="10"
+                android:hint="Adresse"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textColorHint="#171313"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/profession"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date" />
+
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="37dp"
+                android:ems="10"
+                android:hint="Date Naissance"
+                android:inputType="date"
+                android:textColorHint="#0C0909"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+            <EditText
+                android:id="@+id/lieu"
+                android:layout_width="350dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Lieu de naissance"
+                android:textColor="#0C0808"
+                android:textColorHint="#090606"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/signin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone"
+                app:layout_constraintVertical_bias="0.241" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#4C4747"
+                android:text="Envoyer"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:cardElevation="10dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

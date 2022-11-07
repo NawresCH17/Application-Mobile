@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CBF9C"
+    tools:context=".DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="369dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Détails"
+                android:textAlignment="center"
+                android:textColor="@color/material_dynamic_secondary10"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="100dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:text="Nom"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/prenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:text="Prenom"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:drawablePadding="20dp"
+                android:text="Adresse"
+                android:textColor="#433E3E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="20dp"
+                android:text="Date Naissance"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/modif"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#4C4747"
+                    android:drawableLeft="@drawable/ic_baseline_mode_edit_24"
+                    android:drawableTint="@color/white"
+                    android:text="Modifier"
+                    android:textSize="15dp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/supp"
+                    android:layout_width="160dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#4C4747"
+                    android:drawableLeft="@drawable/ic_baseline_delete_24"
+                    android:drawableTint="@color/white"
+                    android:text="Supprimer"
+                    android:textSize="15dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9CBF9C"
+        android:orientation="vertical"
+        tools:context=".D3Activity">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="0"
+            android:layout_marginTop="30dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/certificate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="137dp"
+                android:gravity="center"
+                android:text="Bulletin N°3 "
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="extrait"
+                    android:id="@+id/bn3"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#4C4747"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Retour"
+                    android:id="@+id/home"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#4C4747"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
